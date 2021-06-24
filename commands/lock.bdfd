@@ -1,0 +1,5 @@
+$nomention
+$modifyChannelPerms[$channelID;-sendmessages;$guildID]
+$description[Canal bloqueado use `r!unlock` para desbloquear]
+$onlyAdmin[<a:negativo:787789323197743115> Apenas para admins!]
+$color[2EFEF7]
