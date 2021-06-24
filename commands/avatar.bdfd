@@ -1,0 +1,9 @@
+$color[2EFEF7]
+$nomention
+$suppressErrors[Usuário não encontrado.]
+$embeddedURL[$userAvatar[$replaceText[$replaceText[$isNumber[$message[1]];true;$message[1];1];false;$mentioned[1;yes];1]]?size=4096]
+$title[Avatar de $username[$replaceText[$replaceText[$isNumber[$message[1]];true;$authorID;1];false;$mentioned[1;yes];1]]]
+$footer[Executado por: $username#$discriminator[]]
+$image[$userAvatar[$replaceText[$replaceText[$isNumber[$message[1]];true;$message[1];1];false;$mentioned[1;yes];1]]?size=4096]
+$addTimestamp
+$footerIcon[$userAvatar[$replaceText[$replaceText[$isNumber[$message[1]];true;$message[1];1];false;$mentioned[1;yes];1]]]
