@@ -1,0 +1,53 @@
+Pay:
+$nomention
+$color[FA5882]
+$argsCheck[>2;<a:negativo:787789323197743115> Correto: **r!pay** '<user> <quantia>']
+$onlyIf[$mentioned[1]!=;<a:negativo:787789323197743115> Você esqueceu de mencionar alguém ]
+$title[<:berries:816861488786309181> | **Pagamento**]
+$setUserVar[money;$sum[$getUserVar[money;$mentioned[<]];$message[2]];$mentioned[<]]
+$setUserVar[money;$sub[$getUserVar[money;$authorID];$message[2]];$authorID]
+$​​onlyIf[$​​getUserVar[money;$​​authorID]>1;Você não pode ter saldo abaixo de **0** ⚠]$description[
+**Você pagou $message para  $mentioned[1] com sucesso** 💰!]
+$onlyIf[$userExists[$mentioned[1]]==true;<a:negativo:787789323197743115> Usuário não encontrado]
+
+Work:
+$nomention
+$cooldown[2m;<a:negativo:787789323197743115> Espere `%time%` para trabalhar novamente, dinheiro não dá em árvore]
+$setUserVar[money;$sum[$getUserVar[money;$authorID];$random[50;100]];$authorID]
+$title[Trabalho]
+$description[**Enquanto você estava trabalhando, você ganhou seu pagamento de** $random[50;600]]
+$color[FA5882]
+$footerIcon[$authorAvatar]
+
+Rob:
+$nomention
+$onlyIf[$mentioned[1]!=;<a:negativo:787789323197743115> Você esqueceu de mencionar alguém ]
+$onlyIf[$getUserVar[money;$mentioned[1]]>800;**Não tem o suficiente, não há necessidade de roubar este usuário.**]
+$onlyIf[$getUserVar[money]>100;Você não tem dinheiro suficiente para este ato, você precisa de pelo menos $500.]
+$description[
+<:berries:816861488786309181> | **Você roubou <@$mentioned[1]> e ganhou**  $$random[0;$getUserVar[money;$mentioned[1]]]]
+$setUserVar[money;$sub[$getUserVar[money;$mentioned[1]];$random[0;$getUserVar[money;$mentioned[1]]]];$mentioned[1]]
+$setUserVar[money;$sum[$getUserVar[money];$random[0;$getUserVar[money;$mentioned[1]]]]] 
+$onlyIf[$userExists[$mentioned[1]]==true;<a:negativo:787789323197743115> Usuário não encontrado]
+$cooldown[5h;Espere `%time%` para roubar novamente]
+$color[FA5882]
+
+Daily:
+$nomention
+$cooldown[1d;<@$authorID>, **Você só pode receber seu daily em** `%time%`]
+$​setUserVar[money;$​sum[$​getUserVar[money];$​random[1000;2000]]]
+$title[**Daily**]
+$color[FA5882]
+$description[
+<@$authorID>, **Você recebeu $​random[1000;2000]$​** 
+
+
+bal:
+$nomention
+$title[💸 | **Conta bancaria**]
+$description[<:berries:816861488786309181> | **Money:** $getUserVar[money;$authorID]
+
+<:crystal:816862194838667275> | **Crystal:**  $getUserVar[crystal;$authorID]]
+$color[FA5882]
+$footer[Conta bancária de $username]
+$footerIcon[$authorAvatar]
