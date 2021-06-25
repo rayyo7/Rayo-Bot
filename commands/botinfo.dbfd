@@ -1,0 +1,47 @@
+$nomention
+$title[<a:rayo:796085875950878720> Informações Minhas <a:rayo:796085875950878720>]
+$description[
+◉│**Minha Versão:**
+`1.0.0`
+
+◉│**Meu nome:**
+`Rayyo`
+
+◉│**Data que eu fui criado:**
+`$creationDate[783645397859958805]`
+
+◉│**Meu Desenvolvedor:**
+`$username[737821213103095892]#$discriminator[737821213103095892]`
+
+◉│ **Linguagem:**
+`Pt-br`
+
+◉│**Biblioteca:**
+`Discord.js: 12.5.1
+Bdfd`
+
+
+ ◉│**Ping:** 
+`$ping`
+
+◉│**Meu prefixo:**
+`r! - use r!ajuda pra ver meus comandos`
+
+◉│**Uptime:**
+`$uptime`
+
+◉│**Comandos:**
+`$commandsCount Comandos`
+
+◉│**Servidores:**
+`$serverCount Servidores`
+
+◉│**Membros:**
+`$allMembersCount Membros`
+
+<:link:796072426047799396> │Me Adicione
+[Clique Aqui <3]($getBotInvite)]
+$thumbnail[https://media.discordapp.net/attachments/751346819337945101/855318484283293706/03ced157-1803-49e7-8dc6-74ac268a03742.png]
+$footer[Espero ter ajudado]
+$color[2EFEF7]
+$addTimestamp
