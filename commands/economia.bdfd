@@ -46,8 +46,14 @@ bal:
 $nomention
 $title[💸 | **Conta bancaria**]
 $description[<:berries:816861488786309181> | **Money:** $getUserVar[money;$authorID]
-
-<:crystal:816862194838667275> | **Crystal:**  $getUserVar[crystal;$authorID]]
 $color[FA5882]
 $footer[Conta bancária de $username]
 $footerIcon[$authorAvatar]
+
+addmoney:
+$nomention
+$color[FA5882]
+$description[💰 | Sucesso foi adicionado $​noMentionMessage$ na conta do(a) $​username[$mentioned[<]]]
+$setUserVar[money;$sum[$getUserVar[money];$noMentionMessage];$mentioned[<]]
+$deletecommand
+$onlyAdmin[<a:negativo:787789323197743115> Comando disponível apenas para Administradores do servidor]
